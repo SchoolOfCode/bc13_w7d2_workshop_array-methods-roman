@@ -8,6 +8,6 @@ let animals = [
   "basalisk",
 ];
 
-let bListAnimals = animals.filter((array) => {return array.startsWith('b')});
+let bListAnimals = animals.filter((array) => array.startsWith('b'));
 
 console.log(bListAnimals);
