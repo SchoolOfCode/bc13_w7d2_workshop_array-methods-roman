@@ -7,5 +7,7 @@ let animals = [
   "horse",
   "basalisk",
 ];
-// Your 'filter' code here.
-let bListAnimals = animals.filter((animal) => animal.startsWith("b"));
+
+let bListAnimals = animals.filter((array) => {return array.startsWith('b')});
+
+console.log(bListAnimals);

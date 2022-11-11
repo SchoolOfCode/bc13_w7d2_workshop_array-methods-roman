@@ -16,3 +16,20 @@ const students = [
   "Luna Lovegood",
   "Gregory Goyle",
 ];
+
+broomCupboard.sort((a, b) => a - b);
+console.log(broomCupboard);
+
+potions.sort((a, b) => b.shelf - a.shelf);
+console.log(potions);
+
+students.sort((a, b) => {
+  if (a.split(' ')[1] == b.split(' ')[1]) {
+    return 0;
+  } else if (a.split(' ')[1] < b.split(' ')[1]) {
+    return -1;
+  } else {
+    return 1;
+  }
+});
+console.log(students);
